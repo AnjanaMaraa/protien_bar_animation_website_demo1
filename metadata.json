@@ -1,0 +1,6 @@
+{
+  "name": "DigiMaraa Nutrition | 75% Calories from Protein",
+  "description": "The world's most protein-dense bar. High-performance nutrition engineered with 28g protein and only 150 calories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

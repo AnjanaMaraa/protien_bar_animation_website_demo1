@@ -22,8 +22,6 @@ interface HeaderProps {
 
 const DEFAULT_NAV_ITEMS: NavigationItem[] = [
   { id: 'all', label: 'Shop All', href: '#shop-all' },
-  { id: 'bars', label: 'Bars (28g)', href: '#bars' },
-  { id: 'pints', label: 'Pints', href: '#pints', badge: 'New' },
   { id: 'bundle', label: 'Bundle & Save', href: '#bundle' },
   { id: 'science', label: 'The Science', href: '#science' },
 ];
@@ -72,7 +70,7 @@ export function Header({
         // FLEXIBILITY TIP: Modify the transition ease curve (0.16, 1, 0.3, 1) to alter the snappiness
         // of header reveal when scrolling upwards.
         transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-        className="fixed top-0 left-0 right-0 z-50 h-20 w-full border-b transition-colors"
+        className="relative z-40 h-20 w-full border-b transition-colors"
       >
         <div className="mx-auto flex h-full max-w-[1440px] items-center justify-between px-6 md:px-10 lg:px-12">
           

@@ -22,6 +22,15 @@
     font-family: var(--font-sans);
     overflow-x: hidden;
   }
+
+  /* Offset anchor/scrollIntoView targets so sections are not hidden behind the fixed ticker + header (36px + 80px). */
+  html {
+    scroll-padding-top: 7.25rem;
+  }
+
+  section[id] {
+    scroll-margin-top: 7.25rem;
+  }
 }
 
 /* Custom utility styles */

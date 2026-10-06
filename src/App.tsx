@@ -142,16 +142,16 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen w-full bg-black text-white antialiased">
-      {/* 1. TOP PROMO BANNER TICKER */}
-      <PromoTicker />
-
-      {/* 2. DYNAMIC SCROLL HEADER */}
-      <Header
-        cartCount={totalCartCount}
-        onOpenCart={() => setIsCartOpen(true)}
-        onOpenSearch={() => setIsSearchOpen(true)}
-        onNavigateSection={scrollToSection}
-      />
+      {/* 1 & 2. FIXED TOP BAR: PROMO TICKER + DYNAMIC SCROLL HEADER */}
+      <div className="fixed top-0 left-0 right-0 z-50 w-full">
+        <PromoTicker />
+        <Header
+          cartCount={totalCartCount}
+          onOpenCart={() => setIsCartOpen(true)}
+          onOpenSearch={() => setIsSearchOpen(true)}
+          onNavigateSection={scrollToSection}
+        />
+      </div>
 
       {/* 3. CINEMATIC HERO COMPONENT (CANVAS + FALLBACK) */}
       <Hero

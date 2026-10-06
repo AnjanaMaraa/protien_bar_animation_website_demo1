@@ -21,7 +21,7 @@ const TICKER_MESSAGES = [
 
 export function PromoTicker() {
   return (
-    <div className="relative h-9 w-full overflow-hidden bg-[#0a0a0a] border-b border-white/10 z-40 flex items-center select-none">
+    <div className="relative h-9 w-full overflow-hidden bg-[#0a0a0a] border-b border-white/10 z-50 flex items-center select-none">
       <div className="flex w-max">
         <motion.div
           animate={{ x: ['0%', '-50%'] }}

@@ -39,8 +39,7 @@ export interface SequenceLoadingState {
 }
 
 export const DEFAULT_PROTEIN_BAR_SEQUENCE_CONFIG: ImageSequenceConfig = {
-  folderPath: '/assets/protein-bar',
-  fallbackFolderPath: '/src/proteinbar_images',
+  folderPath: `${import.meta.env.BASE_URL}protein-bar`,
   fileNamePrefix: 'ezgif-frame-',
   extension: 'jpg',
   frameCount: 240,
